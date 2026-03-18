@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
+import Results from './components/Results'
+
 
 function App() {
   const [products, setProducts] = useState([])
@@ -9,6 +11,7 @@ function App() {
   return (
     <>
       <Navbar {...generateProps} />
+      <Results products={products} />
     </>
   )
 }
